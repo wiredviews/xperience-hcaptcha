@@ -1,4 +1,4 @@
-# Xperience Page Link Tag Helpers
+# Xperience hCaptcha Form Components
 
 [![GitHub Actions CI: Build](https://github.com/wiredviews/xperience-hcaptcha-form-components/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/wiredviews/xperience-hcaptcha-form-components/actions/workflows/ci.yml)
 
