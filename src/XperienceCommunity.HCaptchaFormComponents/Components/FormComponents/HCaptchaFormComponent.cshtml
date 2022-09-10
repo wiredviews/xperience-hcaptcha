@@ -1,0 +1,37 @@
+@using CMS.Helpers
+@using XperienceCommunity.HCaptchaFormComponents.Components.FormComponents
+@using Kentico.Forms.Web.Mvc
+@using Kentico.Web.Mvc
+
+@model HCaptchaFormComponent
+
+@{
+    var htmlAttributes = ViewData.Kentico().GetEditorHtmlAttributes();
+    var safeComponentId = Html.IdFor(x => x.Value).ToString().Replace("-", "_");
+    var renderFunctionName = "renderHCaptcha" + safeComponentId;
+    var hcaptchaDivId = "hcaptcha-" + Html.IdFor(x => x.Value);
+}
+
+@if (Model.IsConfigured)
+{
+    <script>
+        var @renderFunctionName = function () {
+            hcaptcha.render('@hcaptchaDivId', {
+                'sitekey': '@Model.PublicKey',
+                'theme': '@Model.Properties.Theme',
+                'size': '@Model.Properties.Layout',
+            });
+        };
+    </script>
+    <script src="https://js.hcaptcha.com/1/api.js?onload=@Html.Raw(renderFunctionName)&render=explicit&hl=@Model.Language"
+    async defer></script>
+
+    @Html.HiddenFor(m => m.Value, htmlAttributes)
+    <div id="@hcaptchaDivId"></div>
+}
+else
+{
+    <div class="ktc-form-builder-mvc-invalid-component">
+        <span>@ResHelper.GetString("xperiencecommunity.formbuilder.component.hcaptcha.error.invalidconfiguration")</span>
+    </div>
+}

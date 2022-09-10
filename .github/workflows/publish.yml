@@ -35,10 +35,16 @@ jobs:
       - name: Test Solution
         run: dotnet test --configuration Release --no-build --no-restore
 
-      - name: 'Pack and Publish: Core'
+      - name: 'Pack and Publish: HCaptchaFormComponents'
         uses: ./.github/actions/pack-and-publish
         with:
           projectPath: './src/XperienceCommunity.HCaptchaFormComponents'
+          preReleaseVersion: ${{ github.run_number }}-${{ github.run_attempt }}
+
+      - name: 'Pack and Publish: HCaptchaModule'
+        uses: ./.github/actions/pack-and-publish
+        with:
+          projectPath: './src/XperienceCommunity.HCaptchaModule'
           preReleaseVersion: ${{ github.run_number }}-${{ github.run_attempt }}
 
   publishPreRelease:
