@@ -172,7 +172,7 @@ namespace XperienceCommunity.HCaptcha.CMS
                     new SettingsKeyInfo
                     {
                         KeyName = "CMSHCaptchaPublicKey",
-                        KeyDisplayName = "Public Key",
+                        KeyDisplayName = "hCaptcha Public Key",
                         KeyType = "string",
                         KeyCategoryID = category.CategoryID,
                         KeyDefaultValue = "",
