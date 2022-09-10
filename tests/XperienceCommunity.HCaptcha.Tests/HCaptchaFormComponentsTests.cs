@@ -2,7 +2,7 @@ using AutoFixture.NUnit3;
 using CMS.Tests;
 using NUnit.Framework;
 
-namespace XperienceCommunity.HCaptchaFormComponent.Tests;
+namespace XperienceCommunity.HCaptcha.Tests;
 
 [TestFixture]
 public class HCaptchaFormComponentsTests : UnitTests

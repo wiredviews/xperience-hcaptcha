@@ -1,8 +1,8 @@
 # Xperience hCaptcha Form Components
 
-[![GitHub Actions CI: Build](https://github.com/wiredviews/xperience-hcaptcha-form-components/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/wiredviews/xperience-hcaptcha-form-components/actions/workflows/ci.yml)
+[![GitHub Actions CI: Build](https://github.com/wiredviews/xperience-hcaptcha/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/wiredviews/xperience-hcaptcha/actions/workflows/ci.yml)
 
-[![Publish Packages to NuGet](https://github.com/wiredviews/xperience-hcaptcha-form-components/actions/workflows/publish.yml/badge.svg?branch=main)](https://github.com/wiredviews/xperience-hcaptcha-form-components/actions/workflows/publish.yml)
+[![Publish Packages to NuGet](https://github.com/wiredviews/xperience-hcaptcha/actions/workflows/publish.yml/badge.svg?branch=main)](https://github.com/wiredviews/xperience-hcaptcha/actions/workflows/publish.yml)
 
 ## Packages
 
@@ -58,9 +58,9 @@ Kentico Xperience 13.0 CMS installation module that adds [hCaptcha](https://www.
 
 ## Contributions
 
-If you discover a problem, please [open an issue](https://github.com/wiredviews/xperience-hcaptcha-form-components/issues/new).
+If you discover a problem, please [open an issue](https://github.com/wiredviews/xperience-hcaptcha/issues/new).
 
-If you would like contribute to the code or documentation, please [open a pull request](https://github.com/wiredviews/xperience-hcaptcha-form-components/compare).
+If you would like contribute to the code or documentation, please [open a pull request](https://github.com/wiredviews/xperience-hcaptcha/compare).
 
 ## References
 

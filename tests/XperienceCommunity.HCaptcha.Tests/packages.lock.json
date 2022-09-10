@@ -2002,7 +2002,7 @@
         "resolved": "1.2.0",
         "contentHash": "zRWpPAxBg3lNdm4UiKixTe+DFPoNid9CILggTCy/0WR2WKETe17kTWhiiIpLB2k5IEgnvA0QLfKlvd6Tvu0pzA=="
       },
-      "xperiencecommunity.hcaptchaformcomponents": {
+      "xperiencecommunity.hcaptcha": {
         "type": "Project",
         "dependencies": {
           "Kentico.Xperience.AspNetCore.WebApp": "[13.0.0, 13.1.0)"
