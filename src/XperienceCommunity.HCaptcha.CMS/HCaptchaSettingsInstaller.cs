@@ -226,6 +226,7 @@ namespace XperienceCommunity.HCaptcha.CMS
                 existingKey.KeyDescription = key.KeyDescription;
                 existingKey.KeyIsCustom = key.KeyIsCustom;
                 existingKey.KeyOrder = key.KeyOrder;
+                existingKey.KeyExplanationText = key.KeyExplanationText;
 
                 key.Update();
             }
