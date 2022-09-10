@@ -60,7 +60,7 @@ namespace XperienceCommunity.HCaptcha.CMS
                 ContinuousIntegrationAllowObjectSerialization = false
             })
             {
-                var sitesWithResourceInstalled = resourceSiteProvider
+                int[] sitesWithResourceInstalled = resourceSiteProvider
                     .Get()
                     .Column("SiteID")
                     .WhereEquals("ResourceID", resourceInfo.ResourceID)
@@ -77,7 +77,7 @@ namespace XperienceCommunity.HCaptcha.CMS
 
                 unassignedSites.ForEach(siteId => resourceSiteProvider.Add(resourceInfo.ResourceID, siteId));
 
-                var unassignedSiteCount = unassignedSites.Count;
+                int unassignedSiteCount = unassignedSites.Count;
 
                 if (unassignedSiteCount > 0)
                 {
@@ -228,33 +228,24 @@ namespace XperienceCommunity.HCaptcha.CMS
                 existingKey.KeyOrder = key.KeyOrder;
                 existingKey.KeyExplanationText = key.KeyExplanationText;
 
-                key.Update();
+                existingKey.Update();
             }
         }
 
-        private bool InstalledModuleIsCurrent(ResourceInfo resourceInfo)
-        {
-            return (resourceInfo != null) &&
+        private bool InstalledModuleIsCurrent(ResourceInfo resourceInfo) => (resourceInfo != null) &&
                    (GetModuleVersionFromAssembly() == resourceInfo.ResourceInstalledVersion);
-        }
 
         /// <summary>
         /// Create a Module version number from the assembly version.
         /// The module version must be in 3 parts (e.g. 1.0.13).
         /// </summary>
         /// <returns></returns>
-        private string GetModuleVersionFromAssembly()
-        {
-            return this.GetType().Assembly.GetName().Version.ToString(3);
-        }
+        private string GetModuleVersionFromAssembly() => GetType().Assembly.GetName().Version.ToString(3);
 
-        private void LogInformation(string eventCode, string eventMessage)
-        {
-            log.LogEvent(EventTypeEnum.Information,
+        private void LogInformation(string eventCode, string eventMessage) => log.LogEvent(EventTypeEnum.Information,
                                       nameof(HCaptchaSettingsInstaller),
                                       eventCode,
                                       eventMessage);
-        }
     }
 
     internal static class ResourceConstants
