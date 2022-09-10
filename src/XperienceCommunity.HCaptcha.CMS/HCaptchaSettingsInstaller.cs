@@ -164,6 +164,9 @@ namespace XperienceCommunity.HCaptcha.CMS
                     return;
                 }
 
+                string publicKeyText = @"The public site API key for the site where you want to use hCaptcha.<br /><br /> You can get your API keys at <a href=""https://dashboard.hcaptcha.com/"">https://dashboard.hcaptcha.com/</a>.";
+                string secretKeyText = @"The secret API key for the site where you want to use hCaptcha.<br /><br /> You can get your API keys at <a href=""https://dashboard.hcaptcha.com/"">https://dashboard.hcaptcha.com/</a>.";
+
                 var keys = new SettingsKeyInfo[]
                 {
                     new SettingsKeyInfo
@@ -173,8 +176,8 @@ namespace XperienceCommunity.HCaptcha.CMS
                         KeyType = "string",
                         KeyCategoryID = category.CategoryID,
                         KeyDefaultValue = "",
-                        KeyDescription = @"
-    The public site API key for the site where you want to use hCaptcha.<br /><br /> You can get your API keys at <a href=""https://dashboard.hcaptcha.com/"">https://dashboard.hcaptcha.com/</a>.",
+                        KeyDescription = publicKeyText,
+                        KeyExplanationText = publicKeyText,
                         KeyIsCustom = true,
                         KeyOrder = 10,
                     },
@@ -185,8 +188,8 @@ namespace XperienceCommunity.HCaptcha.CMS
                         KeyType = "string",
                         KeyCategoryID = category.CategoryID,
                         KeyDefaultValue = "",
-                        KeyDescription = @"
-    The secret API key for the site where you want to use hCaptcha.<br /><br /> You can get your API keys at <a href=""https://dashboard.hcaptcha.com/"">https://dashboard.hcaptcha.com/</a>.",
+                        KeyDescription = secretKeyText,
+                        KeyExplanationText = secretKeyText,
                         KeyIsCustom = true,
                         KeyOrder = 11,
                     },
