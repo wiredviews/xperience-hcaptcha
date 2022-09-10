@@ -203,7 +203,6 @@ namespace XperienceCommunity.HCaptcha.CMS
         {
             var existingKeys = SettingsKeyInfoProvider.GetSettingsKeys()
                 .WhereIn(nameof(SettingsKeyInfo.KeyName), keys.Select(k => k.KeyName).ToArray())
-                .Columns(nameof(SettingsKeyInfo.KeyName))
                 .TypedResult
                 .ToList();
 
