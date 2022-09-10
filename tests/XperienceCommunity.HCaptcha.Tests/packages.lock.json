@@ -2005,7 +2005,7 @@
       "xperiencecommunity.hcaptcha": {
         "type": "Project",
         "dependencies": {
-          "Kentico.Xperience.AspNetCore.WebApp": "[13.0.0, 13.1.0)"
+          "Kentico.Xperience.AspNetCore.WebApp": "[13.0.66, 13.1.0)"
         }
       }
     }

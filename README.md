@@ -10,13 +10,13 @@
 
 [![NuGet Package](https://img.shields.io/nuget/v/XperienceCommunity.HCaptcha.svg)](https://www.nuget.org/packages/XperienceCommunity.HCaptcha)
 
-Kentico Xperience 13.0 ASP.NET Core 6.0 Form Component that adds [hCaptcha](https://www.hcaptcha.com/) captcha validation to Form Builder forms.
+Kentico Xperience 13.0.66 (or higher) ASP.NET Core 6.0 Form Component that adds [hCaptcha](https://www.hcaptcha.com/) captcha validation to Form Builder forms.
 
 ### XperienceCommunity.HCaptcha.CMS
 
 [![NuGet Package](https://img.shields.io/nuget/v/XperienceCommunity.HCaptcha.CMS.svg)](https://www.nuget.org/packages/XperienceCommunity.HCaptcha.CMS)
 
-Kentico Xperience 13.0 CMS installation module that adds [hCaptcha](https://www.hcaptcha.com/) settings keys to the Settings application.
+Kentico Xperience 13.0.66 (or higher) CMS installation module that adds [hCaptcha](https://www.hcaptcha.com/) settings keys to the Settings application.
 
 ## How to Use?
 

@@ -17,7 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Kentico.Xperience.AspNetCore.WebApp" Version="[13.0.0, 13.1.0)" />
+    <PackageReference Include="Kentico.Xperience.AspNetCore.WebApp" Version="[13.0.66, 13.1.0)" />
     <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.1.1">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
