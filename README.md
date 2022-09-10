@@ -1,4 +1,4 @@
-# Xperience hCaptcha Form Components
+# Xperience hCaptcha
 
 [![GitHub Actions CI: Build](https://github.com/wiredviews/xperience-hcaptcha/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/wiredviews/xperience-hcaptcha/actions/workflows/ci.yml)
 
