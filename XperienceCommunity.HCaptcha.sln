@@ -3,15 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30114.105
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XperienceCommunity.HCaptchaFormComponents", "src\XperienceCommunity.HCaptchaFormComponents\XperienceCommunity.HCaptchaFormComponents.csproj", "{8CA4936A-ABCD-4EC8-A5FF-DBB5BD7CFA4B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XperienceCommunity.HCaptcha", "src\XperienceCommunity.HCaptcha\XperienceCommunity.HCaptcha.csproj", "{8CA4936A-ABCD-4EC8-A5FF-DBB5BD7CFA4B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{8EF4BD54-E914-4E49-9648-CF829E910BF0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XperienceCommunity.HCaptchaFormComponents.Tests", "tests\XperienceCommunity.HCaptchaFormComponents.Tests\XperienceCommunity.HCaptchaFormComponents.Tests.csproj", "{055BB406-0178-4556-8523-CCFDF6F4779B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XperienceCommunity.HCaptcha.Tests", "tests\XperienceCommunity.HCaptcha.Tests\XperienceCommunity.HCaptcha.Tests.csproj", "{055BB406-0178-4556-8523-CCFDF6F4779B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{98231ACB-D7FD-43B6-8E74-9784ED27FE20}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XperienceCommunity.HCaptchaModule", "src\XperienceCommunity.HCaptchaModule\XperienceCommunity.HCaptchaModule.csproj", "{2083488C-C419-4D1C-8E30-A9019D1191DF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XperienceCommunity.HCaptcha.CMS", "src\XperienceCommunity.HCaptcha.CMS\XperienceCommunity.HCaptcha.CMS.csproj", "{2083488C-C419-4D1C-8E30-A9019D1191DF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

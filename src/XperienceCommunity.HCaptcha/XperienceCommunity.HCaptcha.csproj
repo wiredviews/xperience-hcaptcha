@@ -7,7 +7,7 @@
       Provides hCaptcha Form Component for Kentico Xperience 13.0 applications to help protect Form Builder Form submissions from spam.
     </Description>
 
-    <Product>XperienceCommunity.HCaptchaFormComponents</Product>
+    <Product>XperienceCommunity.HCaptcha</Product>
     <Title>$(Product)</Title>
     <PackageTags>$(PackageTags)</PackageTags>
   </PropertyGroup>

@@ -6,30 +6,46 @@
 
 ## Packages
 
-### XperienceCommunity.HCaptchaFormComponents
+### XperienceCommunity.HCaptcha
 
-[![NuGet Package](https://img.shields.io/nuget/v/XperienceCommunity.HCaptchaFormComponents.svg)](https://www.nuget.org/packages/XperienceCommunity.HCaptchaFormComponents)
+[![NuGet Package](https://img.shields.io/nuget/v/XperienceCommunity.HCaptcha.svg)](https://www.nuget.org/packages/XperienceCommunity.HCaptcha)
 
-Kentico Xperience 13.0 ASP.NET Core Form Component that adds [hCaptcha](https://www.hcaptcha.com/) captcha validation to Form Builder forms.
+Kentico Xperience 13.0 ASP.NET Core 6.0 Form Component that adds [hCaptcha](https://www.hcaptcha.com/) captcha validation to Form Builder forms.
 
-### XperienceCommunity.HCaptchaModule
+### XperienceCommunity.HCaptcha.CMS
 
-[![NuGet Package](https://img.shields.io/nuget/v/XperienceCommunity.HCaptchaModule.svg)](https://www.nuget.org/packages/XperienceCommunity.HCaptchaModule)
+[![NuGet Package](https://img.shields.io/nuget/v/XperienceCommunity.HCaptcha.CMS.svg)](https://www.nuget.org/packages/XperienceCommunity.HCaptcha.CMS)
 
 Kentico Xperience 13.0 CMS installation module that adds [hCaptcha](https://www.hcaptcha.com/) settings keys to the Settings application.
 
 ## How to Use?
 
-1. Install the `XperienceCommunity.HCaptchaFormComponents` NuGet package in your ASP.NET Core application:
+1. Install the `XperienceCommunity.HCaptcha` NuGet package in your ASP.NET Core application:
 
    ```bash
-   dotnet add package XperienceCommunity.HCaptchaFormComponents
+   dotnet add package XperienceCommunity.HCaptcha
    ```
 
-1. Install the `XperienceCommunity.HCaptchaModule` NuGet package in your CMS application:
+1. Install the `XperienceCommunity.HCaptcha.CMS` NuGet package in your CMS application:
 
    ```bash
-   dotnet add package XperienceCommunity.HCaptchaModule
+   dotnet add package XperienceCommunity.HCaptcha.CMS
+   ```
+
+1. Add a registration for the `HCaptchaInstallerModule` in your `CMSApp` project:
+
+   ```csharp
+   using XperienceCommunity.HCaptcha.CMS
+
+   [assembly: RegisterModule(typeof(HCaptchaInstallerModule))]
+
+   namespace CMSApp.Configuration
+   {
+      public class DependencyRegistrations
+      {
+
+      }
+   }
    ```
 
 1. Set the settings keys in the CMS Settings application with the values provided in your [hCaptcha Dashboard](https://dashboard.hcaptcha.com/).

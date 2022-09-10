@@ -7,7 +7,7 @@ using CMS.DataEngine;
 using CMS.Modules;
 using CMS.SiteProvider;
 
-namespace XperienceCommunity.HCaptchaModule
+namespace XperienceCommunity.HCaptcha.CMS
 {
     public interface IHCaptchaSettingsInstaller
     {

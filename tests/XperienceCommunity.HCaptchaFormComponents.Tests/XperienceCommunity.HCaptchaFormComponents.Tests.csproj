@@ -28,7 +28,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\XperienceCommunity.HCaptchaFormComponents\XperienceCommunity.HCaptchaFormComponents.csproj" />
+    <ProjectReference Include="..\..\src\XperienceCommunity.HCaptcha\XperienceCommunity.HCaptcha.csproj" />
   </ItemGroup>
 
 </Project>

@@ -14,7 +14,7 @@ using CMS.Helpers;
 using CMS.SiteProvider;
 using Kentico.Forms.Web.Mvc;
 using Newtonsoft.Json;
-using XperienceCommunity.HCaptchaFormComponents.Components.FormComponents;
+using XperienceCommunity.HCaptcha.Components.FormComponents;
 
 [assembly: RegisterFormComponent(
     HCaptchaFormComponent.IDENTIFIER,
@@ -22,7 +22,7 @@ using XperienceCommunity.HCaptchaFormComponents.Components.FormComponents;
     "{$xperiencecommunity.formbuilder.component.hcaptcha.name$}",
     Description = "{$xperiencecommunity.formbuilder.component.hcaptcha.description$}", IconClass = "icon-recaptcha", ViewName = "~/Components/FormComponents/HCaptchaFormComponent.cshtml")]
 
-namespace XperienceCommunity.HCaptchaFormComponents.Components.FormComponents;
+namespace XperienceCommunity.HCaptcha.Components.FormComponents;
 
 /// <summary>
 /// HCaptcha captcha form component.

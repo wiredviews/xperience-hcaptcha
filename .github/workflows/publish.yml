@@ -38,13 +38,13 @@ jobs:
       - name: 'Pack and Publish: HCaptchaFormComponents'
         uses: ./.github/actions/pack-and-publish
         with:
-          projectPath: './src/XperienceCommunity.HCaptchaFormComponents'
+          projectPath: './src/XperienceCommunity.HCaptcha'
           preReleaseVersion: ${{ github.run_number }}-${{ github.run_attempt }}
 
       - name: 'Pack and Publish: HCaptchaModule'
         uses: ./.github/actions/pack-and-publish
         with:
-          projectPath: './src/XperienceCommunity.HCaptchaModule'
+          projectPath: './src/XperienceCommunity.HCaptcha.CMS'
           preReleaseVersion: ${{ github.run_number }}-${{ github.run_attempt }}
 
   publishPreRelease:

@@ -2,7 +2,7 @@
 using CMS.Core;
 using CMS.DataEngine;
 
-namespace XperienceCommunity.HCaptchaModule
+namespace XperienceCommunity.HCaptcha.CMS
 {
     public class HCaptchaInstallerModule : Module
     {

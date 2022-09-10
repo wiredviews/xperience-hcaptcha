@@ -18,7 +18,7 @@
     "**/obj": true
   },
 
-  "omnisharp.defaultLaunchSolution": "XperienceCommunity.HCaptchaFormComponents.sln",
+  "omnisharp.defaultLaunchSolution": "XperienceCommunity.HCaptcha.sln",
   "omnisharp.useEditorFormattingSettings": true,
   "omnisharp.enableImportCompletion": true,
 

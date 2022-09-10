@@ -2,6 +2,13 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <Description>
+      Provides hCaptcha CMS integration Kentico Xperience 13.0 applications to help protect Form Builder Form submissions from spam.
+    </Description>
+
+    <Product>XperienceCommunity.HCaptcha.CMS</Product>
+    <Title>$(Product)</Title>
+    <PackageTags>$(PackageTags)</PackageTags>
   </PropertyGroup>
 
   <PropertyGroup>
