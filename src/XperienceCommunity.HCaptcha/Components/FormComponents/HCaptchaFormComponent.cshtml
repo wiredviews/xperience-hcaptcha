@@ -22,9 +22,35 @@
                 'size': '@Model.Properties.Layout',
             });
         };
+
+        // Add function to load array in case multiple hcaptcha
+        window.hcaptchatoload = window.hcaptchatoload || [];
+
+        // if not loaded, then start loading and add current initializer to queue.
+        if(!window.hcpatchaloading) {
+            window.hcpatchaloading = true;
+            window.hcaptchaloaded = false;
+
+            window.hcaptchatoload.push(@(Html.Raw(renderFunctionName)));
+
+            // Load script only once and call
+            var script = document.createElement("script");  // create a script DOM node
+            script.src = "https://js.hcaptcha.com/1/api.js?render=explicit&hl=@Model.Language";  // set its src to the provided URL
+            document.head.appendChild(script);
+            script.addEventListener('load', function(e) {
+                 window.hcaptchaloaded = true;
+                 for(var i=0; i< window.hcaptchatoload.length; i++) {
+                      window.hcaptchatoload[i]();
+                 }
+            })
+        } else if(window.hcaptchaloaded) {
+            // if already loaded, then run function
+            @(Html.Raw(renderFunctionName))();
+        } else {
+            // If both loading and not already loaded, add to queue to run once loaded.
+            window.hcaptchatoload.push(@(Html.Raw(renderFunctionName)));
+        }
     </script>
-    <script src="https://js.hcaptcha.com/1/api.js?onload=@Html.Raw(renderFunctionName)&render=explicit&hl=@Model.Language"
-    async defer></script>
 
     @Html.HiddenFor(m => m.Value, htmlAttributes)
     <div id="@hcaptchaDivId"></div>
