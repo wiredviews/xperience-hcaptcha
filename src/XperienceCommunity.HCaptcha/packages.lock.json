@@ -4,11 +4,11 @@
     "net6.0": {
       "Kentico.Xperience.AspNetCore.WebApp": {
         "type": "Direct",
-        "requested": "[13.0.82, )",
-        "resolved": "13.0.82",
-        "contentHash": "S5E0JyTcfpy8LN9bHnf0WWKpP6l//dVMFhBlYTLWTrjNBC//zZj4SlYwyMaqA+tpP9Gf0rwwrkCvXDsEdMPs2w==",
+        "requested": "[13.0.66, 13.1.0)",
+        "resolved": "13.0.66",
+        "contentHash": "Zc9hGzFiE2vC3tBaN5Pu0P/6/mgHkGKWyjdP6upWBwI4u7Gzn/ebQbGiR1FTTRxZ1X+3zQpFx/5zDuYSnofVPg==",
         "dependencies": {
-          "Kentico.Xperience.Libraries": "[13.0.82]",
+          "Kentico.Xperience.Libraries": "[13.0.66]",
           "Microsoft.Extensions.FileProviders.Embedded": "3.1.8",
           "Microsoft.Extensions.Localization": "3.1.8",
           "Microsoft.Extensions.Logging": "3.1.8"
@@ -79,15 +79,14 @@
       },
       "Kentico.Xperience.Libraries": {
         "type": "Transitive",
-        "resolved": "13.0.82",
-        "contentHash": "nrLGvXtH7kGS9mQk+kUsjKrbdmSGey3rWyhqeiOucvhDM4RxAK4ODTLhoaarYp+wusLWLMwduVsAD6+4/Qbh1g==",
+        "resolved": "13.0.66",
+        "contentHash": "SbBTWbh4/india3SBtN5zPlve5ZMe7+y9Gw/uyfM90TP3rFvFCWIG1QDyqnoyOEOFajdIB+NQ9xE9TcjF78aaA==",
         "dependencies": {
           "AWSSDK.Core": "3.5.1.13",
           "AWSSDK.S3": "3.5.1.4",
           "AngleSharp": "0.14.0",
           "Azure.AI.TextAnalytics": "5.0.0",
           "DocumentFormat.OpenXml": "2.7.2",
-          "MailKit": "3.3.0",
           "MaxMind.GeoIP2": "3.2.0",
           "Microsoft.Azure.CognitiveServices.Vision.ComputerVision": "7.0.0",
           "Microsoft.Azure.Search": "10.1.0",
@@ -130,14 +129,6 @@
           "System.Text.Encoding.CodePages": "4.5.0",
           "System.Threading.AccessControl": "4.5.0",
           "Ude.NetStandard": "1.2.0"
-        }
-      },
-      "MailKit": {
-        "type": "Transitive",
-        "resolved": "3.3.0",
-        "contentHash": "+TkmnfnicAgtwmPDiqZ/CvtLh7z36o44wjgvJzkbFXyGSnhVxmUWdvnzerA6EqslPTP9nK8aWqoQvr1uMpeHCw==",
-        "dependencies": {
-          "MimeKit": "3.3.0"
         }
       },
       "MaxMind.Db": {
@@ -555,15 +546,6 @@
           "Microsoft.NETCore.Platforms": "2.0.0"
         }
       },
-      "MimeKit": {
-        "type": "Transitive",
-        "resolved": "3.3.0",
-        "contentHash": "l3J4XEioKPfck1WnCSVPPH3Jc3BefaAd2ntU66zn6pHDM2F5ev4KSUCwg3VnEKBCe8up2T8+qhliKPxug9fRZw==",
-        "dependencies": {
-          "Portable.BouncyCastle": "1.9.0",
-          "System.Security.Cryptography.Pkcs": "6.0.0"
-        }
-      },
       "Mono.Cecil": {
         "type": "Transitive",
         "resolved": "0.10.0",
@@ -631,11 +613,6 @@
         "type": "Transitive",
         "resolved": "5.3.1",
         "contentHash": "P9zDm21GlzQoei3nvuNP4yHXgTmDexRK/UAmoqTsCJIi//nu1wxTRbi+PmvXHfam9secUj2aKXzBRXf2isSkUw=="
-      },
-      "Portable.BouncyCastle": {
-        "type": "Transitive",
-        "resolved": "1.9.0",
-        "contentHash": "eZZBCABzVOek+id9Xy04HhmgykF0wZg9wpByzrWN7q8qEI0Qen9b7tfd7w8VA3dOeesumMG7C5ZPy0jk7PSRHw=="
       },
       "PreMailer.Net": {
         "type": "Transitive",
@@ -988,11 +965,6 @@
           "System.Runtime.Extensions": "4.3.0",
           "System.Threading": "4.3.0"
         }
-      },
-      "System.Formats.Asn1": {
-        "type": "Transitive",
-        "resolved": "6.0.0",
-        "contentHash": "T6fD00dQ3NTbPDy31m4eQUwKW84s03z0N2C8HpOklyeaDgaJPa/TexP4/SkORMSOwc7WhKifnA6Ya33AkzmafA=="
       },
       "System.Globalization": {
         "type": "Transitive",
@@ -1527,10 +1499,10 @@
       },
       "System.Security.Cryptography.Pkcs": {
         "type": "Transitive",
-        "resolved": "6.0.0",
-        "contentHash": "elM3x+xSRhzQysiqo85SbidJJ2YbZlnvmh+53TuSZHsD7dNuuEWser+9EFtY+rYupBwkq2avc6ZCO3/6qACgmg==",
+        "resolved": "4.5.0",
+        "contentHash": "TGQX51gxpY3K3I6LJlE2LAftVlIMqJf0cBGhz68Y89jjk3LJCB6SrwiD+YN1fkqemBvWGs+GjyMJukl6d6goyQ==",
         "dependencies": {
-          "System.Formats.Asn1": "6.0.0"
+          "System.Security.Cryptography.Cng": "4.5.0"
         }
       },
       "System.Security.Cryptography.Primitives": {
