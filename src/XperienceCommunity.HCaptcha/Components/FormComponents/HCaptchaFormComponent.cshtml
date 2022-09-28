@@ -15,16 +15,41 @@
 @if (Model.IsConfigured)
 {
     <script>
-        var @renderFunctionName = function () {
-            hcaptcha.render('@hcaptchaDivId', {
-                'sitekey': '@Model.PublicKey',
-                'theme': '@Model.Properties.Theme',
-                'size': '@Model.Properties.Layout',
-            });
-        };
+        (function () {
+            'use strict';
+            function renderHCaptcha() {
+                window.hcaptcha.render('@hcaptchaDivId', {
+                    'sitekey': '@Model.PublicKey',
+                    'theme': '@Model.Properties.Theme',
+                    'size': '@Model.Properties.Layout',
+                });
+            };
+            if (window.hcaptchaScriptStatus === 'LOADED') {
+                renderHCaptcha();
+                return;
+            }
+            window.hcaptchatoload = window.hcaptchatoload || [];
+            if (window.hcaptchaScriptStatus === 'LOADING') {
+                window.hcaptchatoload.push(renderHCaptcha);
+                return;
+            }
+            if (window.hcaptchaScriptStatus !== 'LOADING' && window.hcaptchaScriptStatus !== 'LOADED') {
+                window.hcaptchaScriptStatus = 'LOADING';
+                window.hcaptchatoload.push(renderHCaptcha);
+                var script = document.createElement("script");
+                script.src = "https://js.hcaptcha.com/1/api.js?render=explicit&hl=@Model.Language";
+                script.addEventListener('load', function (e) {
+                    window.hcaptchaScriptStatus = 'LOADED';
+                    for (var i = 0; i < window.hcaptchatoload.length; i++) {
+                        window.hcaptchatoload[i]();
+                    }
+                });
+
+                document.head.appendChild(script);
+                return;
+            }
+        })();
     </script>
-    <script src="https://js.hcaptcha.com/1/api.js?onload=@Html.Raw(renderFunctionName)&render=explicit&hl=@Model.Language"
-    async defer></script>
 
     @Html.HiddenFor(m => m.Value, htmlAttributes)
     <div id="@hcaptchaDivId"></div>
