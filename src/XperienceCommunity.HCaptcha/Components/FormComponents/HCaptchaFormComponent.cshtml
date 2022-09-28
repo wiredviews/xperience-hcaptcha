@@ -17,22 +17,29 @@
     <script>
         (function () {
             'use strict';
+
             function renderHCaptcha() {
                 window.hcaptcha.render('@hcaptchaDivId', {
                     'sitekey': '@Model.PublicKey',
                     'theme': '@Model.Properties.Theme',
                     'size': '@Model.Properties.Layout',
                 });
-            };
+            }
+
             if (window.hcaptchaScriptStatus === 'LOADED') {
                 renderHCaptcha();
+
                 return;
             }
+
             window.hcaptchatoload = window.hcaptchatoload || [];
+
             if (window.hcaptchaScriptStatus === 'LOADING') {
                 window.hcaptchatoload.push(renderHCaptcha);
+
                 return;
             }
+
             if (window.hcaptchaScriptStatus !== 'LOADING' && window.hcaptchaScriptStatus !== 'LOADED') {
                 window.hcaptchaScriptStatus = 'LOADING';
                 window.hcaptchatoload.push(renderHCaptcha);
@@ -46,6 +53,7 @@
                 });
 
                 document.head.appendChild(script);
+
                 return;
             }
         })();
